@@ -32,14 +32,64 @@ import {
 class FooterBlk extends React.Component {
   render() {
     return (
-      <footer className="footer">
+      <header className="footer">
+        <p id="connect" className="display-4 pb-3 text-center text-light">
+          Connect with me!
+        </p>
+        <ul className="social-networks square spin-icon">
+          <li>
+            <a href="https://www.linkedin.com/in/ivan-rendon-368b53174/" className="icon-linkedin">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ivan-rendon-368b53174/" className="icon-twitter">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ivan.rendon.319" className="icon-facebook">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ivansito87" className="icon-twitch">
+              Twitch
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ivansito87" className="icon-github">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/ivansito87/" className="icon-pinterest">
+              Pinterest
+            </a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/11216672/ivansito87?tab=profile" className="icon-instagram">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://gt.bootcampcontent.com/ivan.rendon" className="icon-vimeo">
+              Vimeo
+            </a>
+          </li>
+        </ul>
+        <h4 id="connect" className="text-center text-light my-0 pb-2">
+          Copyright &copy; Ivan Rendon 2019
+        </h4>
+      </header>);
+     {/* <footer className="footer">
         <Container>
           <Row>
             <Col md="3">
               <h1 className="title">Ivan Rendon •</h1>
             </Col>
             <Col md="3">
-              {/*<Nav>
+              <Nav>
                 <NavItem>
                   <NavLink to="/" tag={Link}>
                     Home
@@ -60,7 +110,7 @@ class FooterBlk extends React.Component {
                     Profile
                   </NavLink>
                 </NavItem>
-              </Nav>*/}
+              </Nav>
             </Col>
             <Col md="3">
               <Nav>
@@ -99,7 +149,7 @@ class FooterBlk extends React.Component {
                   <i className="fab fa-twitter"/>
                 </Button>
                 <UncontrolledTooltip delay={0} target="tooltip622135962">
-                  Follow us
+                  Follow Me
                 </UncontrolledTooltip>
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
@@ -129,8 +179,8 @@ class FooterBlk extends React.Component {
             </Col>
           </Row>
         </Container>
-      </footer>
-    );
+      </footer>*/}
+    /*);*/
   }
 }
 
