@@ -116,6 +116,7 @@ class ProfilePage extends React.Component {
 
   render() {
     let user = this.props;
+    const colorsArr = ["default", "primary", "info", "success", "warning", "danger", "neutral"];
     return (
       <>
         <div className="wrapper mt-3 pt-0">
@@ -229,29 +230,27 @@ class ProfilePage extends React.Component {
                     <CardHeader>
                       <img
                         alt="..."
-                        className="img-center img-fluid rounded-circle"
+                        className="img-center img-fluid img-raised"
                         src={user.userAvatar}
                       />
-                      <h4 className="title text-center">{user.login}</h4>
+                      <h4 className="title text-center mb-0">{user.login}</h4>
                     </CardHeader>
                     <CardBody>
                       <Nav
-                        className="nav-tabs-success justify-content-center"
+                        className="nav-tabs-success justify-content-center mt-1"
                         tabs
                       >
                         <NavItem>
-                          <NavLink
-                            className={classnames({
-                              active: true
-                            })}
+                          <Button
+                            color={colorsArr[user.buttonColor]}
                             href={user.userUrl}
                             onClick={e => this.toggleTabs(e, "tabs", 3)}
                           >
                             About
-                          </NavLink>
+                          </Button>
                         </NavItem>
                       </Nav>
-                      <TabContent
+                      {/*<TabContent
                         className="tab-subcategories"
                         activeTab={"tab" + 3}
                       >
@@ -275,7 +274,7 @@ class ProfilePage extends React.Component {
                             </tbody>
                           </Table>
                         </TabPane>
-                      </TabContent>
+                      </TabContent>*/}
                     </CardBody>
                   </Card>
                 </Col>

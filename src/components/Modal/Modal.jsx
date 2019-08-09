@@ -65,7 +65,7 @@ class CoolModal extends React.Component {
           <Button color="warning"
                   type="button"
                   onClick={this.props.toggleModal}>
-            Nice Button
+            OK, GOT IT!
           </Button>
           {/*<Button
             color="danger"
