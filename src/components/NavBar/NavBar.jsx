@@ -23,7 +23,7 @@ class CoolNavbar extends React.Component {
   render() {
     return (
       <>
-        <Navbar className="bg-warning small-nav" expand="lg">
+        <Navbar className="bg-danger small-nav" expand="lg">
           <Container>
             <button
               className="navbar-toggler"

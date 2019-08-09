@@ -107,6 +107,7 @@ class ProfilePage extends React.Component {
   // }
 
   toggleTabs = (e, stateName, index) => {
+    console.log("Wooohoo");
     e.preventDefault();
     this.setState({
       [stateName]: index
@@ -114,12 +115,13 @@ class ProfilePage extends React.Component {
   };
 
   render() {
+    let user = this.props;
     return (
       <>
         <div className="wrapper mt-3 pt-0">
-            <Container className="align-items-center mt-0">
+            {/*<Container className="align-items-center mt-0">*/}
               <Row>
-                <Col lg="6" md="6">
+              {/*  <Col lg="6" md="6">
                   <h1 className="profile-title text-left display-2">{this.props.login}</h1>
                   <h6 className="text-on-back">{this.props.userIndex + 1}</h6>
                   <p className="profile-description">
@@ -132,7 +134,7 @@ class ProfilePage extends React.Component {
                     <Button
                       className="btn-icon btn-round"
                       color="twitter"
-                      href="https://twitter.com/creativetim"
+                      href="https://www.ivanrendon.dev"
                       id="tooltip639225725"
                       target="_blank"
                     >
@@ -166,8 +168,8 @@ class ProfilePage extends React.Component {
                       Follow us
                     </UncontrolledTooltip>
                   </div>
-                </Col>
-                <Col className="ml-auto mr-auto mt-5" lg="4" md="6">
+                </Col>*/}
+               {/* <Col className="ml-auto mr-auto mt-5" lg="4" md="6">
                   <Card className="card-coin card-plain">
                     <CardHeader>
                       <img
@@ -185,18 +187,73 @@ class ProfilePage extends React.Component {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: this.state.tabs === 1
+                              active: true
                             })}
                             onClick={e => this.toggleTabs(e, "tabs", 3)}
                             href="#pablo"
                           >
-                            News
+                            About
                           </NavLink>
                         </NavItem>
                       </Nav>
                       <TabContent
                         className="tab-subcategories"
-                        activeTab={"tab" + this.state.tabs}
+                        activeTab={"tab" + 3}
+                      >
+                        <TabPane tabId="tab3">
+                          <Table className="tablesorter" responsive>
+                            <thead className="text-primary">
+                            <tr>
+                              <th className="header">Latest Crypto News</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>The Daily: Nexo to Pay on Stable...</td>
+                            </tr>
+                            <tr>
+                              <td>Venezuela Begins Public of Nation...</td>
+                            </tr>
+                            <tr>
+                              <td>PR: BitCanna – Dutch Blockchain...</td>
+                            </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                      </TabContent>
+                    </CardBody>
+                  </Card>
+                </Col>*/}
+                <Col className="ml-auto mr-auto mt-5">
+                  <Card className="card-coin card-plain">
+                    <CardHeader>
+                      <img
+                        alt="..."
+                        className="img-center img-fluid rounded-circle"
+                        src={user.userAvatar}
+                      />
+                      <h4 className="title text-center">{user.login}</h4>
+                    </CardHeader>
+                    <CardBody>
+                      <Nav
+                        className="nav-tabs-success justify-content-center"
+                        tabs
+                      >
+                        <NavItem>
+                          <NavLink
+                            className={classnames({
+                              active: true
+                            })}
+                            href={user.userUrl}
+                            onClick={e => this.toggleTabs(e, "tabs", 3)}
+                          >
+                            About
+                          </NavLink>
+                        </NavItem>
+                      </Nav>
+                      <TabContent
+                        className="tab-subcategories"
+                        activeTab={"tab" + 3}
                       >
                         <TabPane tabId="tab3">
                           <Table className="tablesorter" responsive>
@@ -223,9 +280,8 @@ class ProfilePage extends React.Component {
                   </Card>
                 </Col>
               </Row>
-            </Container>
+            {/*</Container>*/}
           </div>
-        <hr />
         {/*</div>*/}
       </>
     );
