@@ -111,7 +111,7 @@ class FooterBlk extends React.Component {
                   <i className="fab fa-facebook-square"/>
                 </Button>
                 <UncontrolledTooltip delay={0} target="tooltip230450801">
-                  Like us
+                  Like Me
                 </UncontrolledTooltip>
                 <Button
                   className="btn-icon btn-neutral btn-round btn-simple"
@@ -123,7 +123,7 @@ class FooterBlk extends React.Component {
                   <i className="fab fa-dribbble"/>
                 </Button>
                 <UncontrolledTooltip delay={0} target="tooltip318450378">
-                  Follow us
+                  Follow Me
                 </UncontrolledTooltip>
               </div>
             </Col>

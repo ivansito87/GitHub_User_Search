@@ -44,6 +44,7 @@ class CoolModal extends React.Component {
     return (
       <Modal
         isOpen={true}
+        modalClassName="modal-black"
         // toggle={() => this.toggleModal("demoModal")}
       >
         <div className="modal-header justify-content-center">
@@ -53,12 +54,12 @@ class CoolModal extends React.Component {
           >
             <i className="tim-icons icon-simple-remove"/>
           </button>
-          <h4 className="title title-up display-3">Ooops! we couldn't find a match</h4>
+          <h4 className="title title-up display-3">Ooops! Something Went Wrong</h4>
         </div>
         <div className="modal-body">
           {/*<h4 className="title title-up">Ooops! we couldn't find a match</h4>*/}
-          <p className="title">
-           Please verify your search, try with a friends first name (e.i: Ivan)
+          <p className="h2 title">
+            {this.props.message}
           </p>
         </div>
         <div className="modal-footer justify-content-end">

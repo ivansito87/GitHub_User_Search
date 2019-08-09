@@ -4705,7 +4705,7 @@ button.bg-secondary:focus {
   background-color: #d6dae2 !important; }
 
 .bg-success {
-  background-color: #00f2c3 !important; }
+    background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3) !important; }
 
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
@@ -9764,7 +9764,7 @@ img {
   .navbar.bg-info {
     background-color: #1d8cf8 !important; }
   .navbar.bg-success {
-    background-color: #00bf9a !important; }
+      background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3) !important; }
   .navbar.bg-danger {
     background-color: #fd5d93 !important; }
   .navbar .navbar-brand {
@@ -14541,7 +14541,7 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
   .card.card-coin {
     border: 2px solid #344675; }
     .card.card-coin .card-header {
-      margin: -100px auto 20px; }
+      margin: -100px auto -18px; }
     .card.card-coin img {
       width: 150px; }
     .card.card-coin hr {
@@ -14570,7 +14570,7 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
 .text-on-back {
   position: relative;
   z-index: 1;
-  font-size: 6.5em;
+  font-size: 5.5em;
   margin-left: -4px;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.2) !important; }

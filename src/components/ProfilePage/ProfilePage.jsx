@@ -108,6 +108,7 @@ class ProfilePage extends React.Component {
 
   toggleTabs = (e, stateName, index) => {
     console.log("Wooohoo");
+    console.log(this.props.userUrl);
     e.preventDefault();
     this.setState({
       [stateName]: index
@@ -243,8 +244,8 @@ class ProfilePage extends React.Component {
                         <NavItem>
                           <Button
                             color={colorsArr[user.buttonColor]}
-                            href={user.userUrl}
-                            onClick={e => this.toggleTabs(e, "tabs", 3)}
+                            custom={user.userUrl}
+                            onClick={user.handleUserCard.bind(this)}
                           >
                             About
                           </Button>

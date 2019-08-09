@@ -10,3 +10,11 @@ hr {
     width: 500px !important;
     height: 50px !important;
 }
+
+.card.card-coin .card-header {
+    margin: -100px auto -18px !important;
+}
+
+.icon-square-pin {
+    height: 20px !important;
+}
