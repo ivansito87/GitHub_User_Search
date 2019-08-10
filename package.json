@@ -27,6 +27,7 @@
     "reactstrap": "7.1.0"
   },
   "scripts": {
+	"install": "npm install --g cross-env",
 	"start": "NODE_PATH=./src react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
