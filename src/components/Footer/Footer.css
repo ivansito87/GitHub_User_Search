@@ -87,8 +87,8 @@
     transform: rotateZ(360deg);
 }
 
-.social-networks.square a:hover:before,
-.social-networks.square a:focus:before {
+.social-networks.chicken a:hover:before,
+.social-networks.chicken a:focus:before {
     border-radius: 0;
 }
 

@@ -6,7 +6,6 @@ import "./styles.css";
 import axios from "axios";
 import CoolModal from "../Modal/Modal";
 import moment from "moment";
-
 import {
   UncontrolledCollapse,
   InputGroup,
@@ -74,11 +73,13 @@ class MainPage extends React.Component {
   };
 
   displayHeading = () =>
-    <div className="content-center brand">
-      <h1 className="h1-seo">Hi, My name is <br/> Ivan Rendon</h1>
+    <div className="content-center">
+      <p id="connect" className="display-1 pb-3 text-center text-light">
+        Hi, My name is <br/> <span className="text-info">Ivan Rendon</span>
+      </p>
       <h3 className="d-none d-sm-block">
-        Welcome to my GitHub search <br /> you can Browse users and their profiles<br /> via the <span
-        className="title text-warning"> GitHub API </span> Search for a user <br />
+        Welcome to my GitHub search <br/> you can Browse users and their profiles<br/> via the <span
+        className="title text-warning"> GitHub API </span> Search for a user <br/>
         Ex: Ivan Rendon
       </h3>
     </div>;
@@ -149,15 +150,12 @@ class MainPage extends React.Component {
       this.requestGetUsers(this.state.pageNumber, this.state.searchUser);
   }
 
-
-  //======================================================================
   handleUserCard = event => {
     let userURL = event.target.getAttribute("custom");
     axios.get(userURL).then(res => {
       let user = res.data;
       this.setState({
         userCard: false,
-        // userDisplay: false,
         userAvatar: user.avatar_url,
         userBio: user.bio,
         userName: user.name,
@@ -176,14 +174,10 @@ class MainPage extends React.Component {
     });
   };
 
-
-  trimTime(time){
-    //2011-07-11T14:22:09Z
+  trimTime(time) {
     time = time.split("T");
     return moment(time[0], "YYYY-MM-DD").format('MMM Do YYYY');
-
   }
-  //======================================================================
 
   render() {
     return (
@@ -286,7 +280,7 @@ class MainPage extends React.Component {
                 </Col>
               ))}
             </Row>
-            <Row className="justify-content-end">
+            <Row className="justify-content-end pb-4">
               <Nav className="nav-pills-info nav-pills-icons text-right" pills>
                 <NavItem>
                   <NavLink
