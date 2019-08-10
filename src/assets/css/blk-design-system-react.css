@@ -10270,9 +10270,12 @@ hr {
   .icon i, .icon svg {
     font-size: auto-0.75; }
 
+/*
 .icon + .icon-text {
   padding-left: 1rem;
-  width: calc(100% - auto - 1); }
+  width: calc(100% - auto - 1);
+}
+*/
 
 .icon-xl {
   width: 5rem;
