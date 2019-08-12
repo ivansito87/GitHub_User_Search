@@ -1,4 +1,4 @@
-# React Github User Search [![Build Status](https://tranquil-spire-91940.herokuapp.com)](https://tranquil-spire-91940.herokuapp.com)
+# React Github User Search
 
 Search and view users via the Github API - [Here](https://tranquil-spire-91940.herokuapp.com)
 
@@ -10,6 +10,7 @@ A personal project built with primarily React it's purpose is to give the user t
 view their profiles as well as some information about their profiles like number of repos, number of followers and number 
 as well as demographics and ways to connect with them via their blog, LinkedIn or portfolio website.
 
+##### Search for First Name, Last Name or Username
 Feel free to leave comments and leave issues
 
 ### Libraries and tools
@@ -55,7 +56,11 @@ export function getAllPeople(page, name) {
 
 #### Preview of the App
 ![Screenshot Of App](./src/images/screenshot1.png)
+
+#### Search for First Name, Last Name or Username 
 ![Screenshot Of App](./src/images/screenshot2.png)
+
+#### See relevant information about users you search
 ![Screenshot Of App](./src/images/screenshot3.png)
 
 
