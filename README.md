@@ -57,11 +57,11 @@ export function getAllPeople(page, name) {
 #### Preview of the App
 ![Screenshot Of App](./src/images/screenshot1.png)
 
-#### Search for First Name, Last Name or Username 
-![Screenshot Of App](./src/images/screenshot2.png)
-
 #### See relevant information about users you search
 ![Screenshot Of App](./src/images/screenshot3.png)
+
+#### Search for First Name, Last Name or Username 
+![Screenshot Of App](./src/images/screenshot2.png)
 
 
 
